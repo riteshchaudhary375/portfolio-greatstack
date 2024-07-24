@@ -487,24 +487,41 @@
         feedback, please use the form below.
       </p>
       <!-- Form -->
-      <form action="" class="max-w-2xl mx-auto">
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="max-w-2xl mx-auto"
+      >
+        <!-- Replace with your Access Key -->
+        <input
+          type="hidden"
+          name="access_key"
+          value="b1be0f34-b88d-4f10-b8fc-b96e183bcac0"
+        />
+
         <!-- <div class="grid grid-cols-2 gap-6 mt-10 mb-8"> -->
         <div class="grid grid-cols-auto gap-6 mt-10 mb-8">
           <input
             type="text"
             placeholder="Enter your name"
+            name="name"
             class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90"
+            required
           />
           <input
             type="email"
             placeholder="Enter your email"
+            name="email"
             class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90"
+            required
           />
         </div>
         <textarea
           rows="6"
           placeholder="Enter your message"
+          name="message"
           class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-darkHover/30 dark:border-white/90"
+          required
         ></textarea>
 
         <button
@@ -515,6 +532,31 @@
         </button>
       </form>
     </div>
+
+    <!-- 
+
+    ------------------------------------------------------------
+    For email send through 'Contact Form', we use 'Web3Forms':
+    ------------------------------------------------------------
+
+    Link:- web3forms.com
+
+    Steps:
+    1. Create Your Access Key
+    2. Enter email address and click 'Create Access Key' button
+    3. Access key will be sent in email address
+    4. Back to 'Web3Forms' site, scroll up and from section 'Works with any technology' click 'HTML' icon.
+    5. Scroll down on section 2 'Create HTML Form', copy the action link from that form.
+    6. Also, copy the 'input' field.
+    7. Paste that url on 'action' type of 'form' section on 'index.html' file.
+    8. And that input field should paste within that form on top.
+    9. On every html input field, give 'name' property like as given in 'web3forms.com'.
+    10. Paste your access key in top input of form.
+    11. Give method as 'POST' in the form.
+    12. For security and user info, place the 'required' method on every html input field of that contact form.
+    13. Make Test by submitting the form. You will get success message...
+
+    -->
 
     <!-- Footer -->
     <div class="mt-20">
