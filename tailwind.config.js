@@ -10,5 +10,9 @@ tailwind.config = {
     animation: {
       spin_slow: "spin 6s linear infinite",
     },
+    colors: {
+      lightHover: "#fcf4ff",
+      darkHover: "#2a004a",
+    },
   },
 };
